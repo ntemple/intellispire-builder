@@ -1,0 +1,14 @@
+# Compose the plg_mailchimp file from various sources
+product:
+  headers:
+    name: MailChimp
+    version: 5.9.0
+  depends:
+    - 'plg_mailchimp'
+  files:
+    'com_mailchimp':
+      'mergecopy':
+        from: platform/com_jomlink/src
+        key: jomlink
+    'plugins/plg_mailchimp':
+      copy: build/plg_mailchimp

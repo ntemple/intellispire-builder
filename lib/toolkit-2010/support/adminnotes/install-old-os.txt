@@ -1,0 +1,41 @@
+    You will need to copy all the Windows installation files to your hard drive first. 
+    Then in the same folder you copied the files to create a new file Msbatch.inf. Add the following:
+
+    Msbatch.inf
+    [Setup]
+    ProductType=1
+    (press Enter)
+    (press Enter)
+
+    Save the file and install Windows.
+
+    When Windows has completed installing go to the Registry Key in 
+    RegEdit HKEY_LOCAL_MACHINE\ Software\ Microsoft\ Windows\ CurrentVersion and get 
+    the value of the Data "ProductKey",  for Windows 95, it will be "ProductID". 
+    If you have Windows 98 or ME do not use the value from "ProductID". Save the information, 
+    this is your Windows CD Key.
+
+C:
+
+
+
+
+
+    To get this accomplished we need to change the setting ProductType in the Setuppp.inf file located inside one of the Precopy?.cab files. Windows Me uses only Precopy1.cab while 9x can use 2 or 3. Since we cannot re-save the file back into the cab file we need to approach this from a different angle.
+
+    You may need to try a few different methods to get the one that works for you.
+
+    Method One: (easiest)
+    Start installing Windows from inside of Windows. When you are asked to except the License Agreement do not click on "Next", YET! Now bring up the Start Menu (Ctrl + ESC buttons) and in the Run window type Notepad. Have Notepad open the file WININST0.400\Setuppp.inf. Do a search for the string "ProductType", and change the value from 9 to 1. If the value 1 fails try one of the other values as noted below
+
+    ProductType=1: Upgrades without asking for CD KEY (serial number)
+    ProductType=2: CD Key required
+    ProductType=5: Asks for CD Key, but won't take valid keys- and you get the option to "ignore" and go on.
+    ProductType=6: Works OK (?) (?)
+    ProductType=7: Works on Windows 95 and 95 A
+    ProductType=9: OEM non upgrade version
+
+    Now save the changes and continue the installation.
+
+
+

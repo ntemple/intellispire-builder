@@ -1,0 +1,2 @@
+<?php
+// Edd License System

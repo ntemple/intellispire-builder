@@ -1,0 +1,16 @@
+INSERT INTO `mwg_setting` VALUES (1,'Email Settings',NULL,'email_mailer',NULL,'phpmail','select','Choose a mailing function.','','a:3:{s:7:\"phpmail\";s:17:\"PHP Mail Function\";s:4:\"smtp\";s:4:\"SMTP\";s:8:\"sendmail\";s:8:\"Sendmail\";}',0);
+INSERT INTO `mwg_setting` VALUES (2,'Email Settings',NULL,'email_from_name',NULL,'','input','From Name','','',0);
+INSERT INTO `mwg_setting` VALUES (3,'Email Settings',NULL,'email_from_address',NULL,'','input','From Address','','',0);
+INSERT INTO `mwg_setting` VALUES (4,'Email Settings',NULL,'email_sendmail_cmd',NULL,'/usr/sbin/sendmail','input','Sendmail Cmd','Enter the full path and commandline to your Sendmail compatible program.','',0);
+INSERT INTO `mwg_setting` VALUES (5,'Email Settings',NULL,'email_smtp_connection',NULL,'none','select','SMTP Security','','a:3:{s:4:\"none\";s:8:\"Standard\";s:3:\"ssl\";s:3:\"SSL\";s:3:\"tls\";s:3:\"TLS\";}',0);
+INSERT INTO `mwg_setting` VALUES (6,'Email Settings',NULL,'email_smtp_host',NULL,'localhost','input','SMTP Host','','',0);
+INSERT INTO `mwg_setting` VALUES (7,'Email Settings',NULL,'email_smtp_port',NULL,'25','input','SMTP Port','','',0);
+INSERT INTO `mwg_setting` VALUES (8,'Email Settings',NULL,'email_smtp_username',NULL,'','input','SMTP Username','','',0);
+INSERT INTO `mwg_setting` VALUES (9,'Email Settings',NULL,'email_smtp_password',NULL,'','input','SMTP Password','','',0);
+INSERT INTO `mwg_setting` VALUES (10,'Global Site Settings',NULL,'site_dbversion','1.3','1.1','hidden','','','',0);
+INSERT INTO `mwg_setting` VALUES (11,'Global Site Settings',NULL,'theme_subtitle','Just Another Marketing Website Generator Site','','input','Site Subtitle','Some themes (wordpress) have the option to use a subtitle. Enter that here.','',2);
+INSERT INTO `mwg_setting` VALUES (12,'Global Site Settings',NULL,'site_title','Online Marketing','','input','Site Title','The title of your site. Appears on most themes and is the default title of all your pages.','',1);
+INSERT INTO `mwg_setting` VALUES (13,'Global Site Settings',NULL,'site_description','Visit our website to find out exactly what you need for online marketing.','','input','Site Description','This is the text of your site-wide meta description tag. It should be 160 characters or less, and appears in search results.','',3);
+INSERT INTO `mwg_setting` VALUES (14,'Email Settings',NULL,'email_limit','100','100','input','Send Limit','The maximum number of emails to send every cron run. The default of 100 stays under most ISPs limits if you set the cron_send to run every 10-15 minutes.','',0);
+INSERT INTO `mwg_setting` VALUES (15,'Admin Settings',NULL,'admin_editor','tinymce','none','select','Text Editor','Which editor would you like to use?','a:3:{s:4:\"none\";s:14:\"Disable Editor\";s:7:\"tinymce\";s:8:\"Tiny MCE\";s:8:\"editarea\";s:9:\"Edit Area\";}',0);
+INSERT INTO `mwg_setting` VALUES (16, 'Admin Settings', NULL, 'session_option', NULL, '', 'select', 'Session Type', 'Choose the session type. Default - default PHP sessions, Local File: move session save path out of the default directory to tmp; Database: database handler (experimental).', 'a:3:{i:0;s:7:"Default";i:1;s:10:"Local File";i:2;s:8:"Database";}', '0');

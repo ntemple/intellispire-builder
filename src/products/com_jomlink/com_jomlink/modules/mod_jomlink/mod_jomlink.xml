@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" method="upgrade" client="site">
+    <name>{fname} Signup Form</name>
+    <author>Intellispire</author>
+    <creationDate>{date}</creationDate>
+    <copyright>Copyright (C)2005 - 2012 Intellispire.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>nick@intellispire.com</authorEmail>
+    <authorUrl>www.intellispire.com</authorUrl>
+    <version>{version}</version>
+    <description>Register Prospects with {fname} via Form. Includes advanced iFrame mode to keep visitors on your page.</description>
+    <files>
+        <filename module="mod_{name}">mod_{name}.php</filename>
+        <filename>index.html</filename>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic" label="Module Parameters">
+{FieldUIformBasic}
+            </fieldset>
+            <fieldset name="advanced" label="Advanced Parameters">
+{FieldUIformAdvanced}
+            </fieldset>
+        </fields>
+    </config>
+</extension>
+

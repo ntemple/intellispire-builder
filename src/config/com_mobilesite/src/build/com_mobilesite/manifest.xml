@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5" method="upgrade">
+  <name>MobileSite</name>
+  <creationDate>2012-06-12</creationDate>
+  <author>Intellispire</author>
+  <authorEmail>nick@intellispire.com</authorEmail>
+  <authorUrl>http://www.intellispire.com/</authorUrl>
+  <copyright>Copyright (c)2008-2012 Intellispire</copyright>
+  <license>GPLv2.0</license>
+  <version>1.2.2</version>
+  <description>MobileSite: Create a mobile website inside of Joomla!</description>
+  <administration>
+    <menu>COM_MOBILESITE</menu>
+    <files folder="administrator/components/com_mobilesite">
+      <file>index.html</file>
+      <file>admin.mobilesite.php</file>
+      <file>config.xml</file>
+      <folder>models</folder>
+    </files> 
+    <languages folder="administrator">
+      <language tag="en-GB">language/en-GB/en-GB.com_mobilesite.ini</language>
+      <language tag="en-GB">language/en-GB/en-GB.com_mobilesite.sys.ini</language>
+      <language tag="en-GB">language/en-GB/en-GB.com_mobilesite.menu.ini</language>
+    </languages>
+  </administration> 
+  <files folder="components/com_mobilesite">
+    <file>index.html</file>
+    <file>mobilesite.php</file>
+    <folder>views/</folder>
+    <folder>assets/</folder>
+    <folder>lib/</folder>
+  </files>
+  <installfile>install.php</installfile>
+  <subinstall>
+    <folder>plugins/mobilesite</folder>
+  </subinstall>
+</install>

@@ -1,0 +1,10 @@
+module:
+  name: icontact
+  plugin:
+    params:
+      - { name: clientid,  type: "text", default: "", label: "iContact Client Id",  description: "Please Enter IContact Client Id From your HTML Form" }
+      - { name: formid,    type: "text", default: "", label: "iContact Form Id",    description: "Please Enter IContact Form Id From your HTML Form" }
+      - { name: listid,    type: "text", default: "", label: "iContact List Id",    description: "Please Enter IContact List Id From your HTML Form" }
+      - { name: specialid, type: "text", default: "", label: "iContact Special Id (4 digits)",  description: "Please Enter IContact SpecialID: From your HTML Form" }
+      - { name: doubleopt, type: 'list', default: '0', label: 'Double Opt In', 'description': 'Use confirmed opt-in, if setup on your form.', options: ['0:iContact DOES NOT Send Confirmation Message', '1:iContact sends confirmation message' ] }
+

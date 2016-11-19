@@ -1,0 +1,9 @@
+platform:
+  name: jomlink
+  plugin:
+    params:
+      - {name: 'activation', type: list, default: '1', label: 'Subscribe When', 'description': 'Choose whether to wait for the user to click on the link in the Joomla! user activation email, or whether to subscribe the user immediately when they register.', options: ['0:User Activates Account', '1:Immediately Upon Registration' ] }
+#      - {name: 'spacer',     type: spacer, hr: true }
+      - {name: 'response',   type: textarea, label:  'Response', 'description': 'Result of last action', cols: 50, rows: 2}
+      - {name: 'request',    type: textarea, label:  'Request',  'description': 'Last set of data sent to service', cols: 50, rows: 2}
+

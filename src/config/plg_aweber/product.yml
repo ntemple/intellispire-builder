@@ -1,0 +1,22 @@
+product:
+    headers:
+        name: AWeber # name, comment here to force newline in template
+        version: 5.9.0 # version, comment here to force newline in template
+    files:
+        'install.aweber.php':
+            composephp:
+                - platform/plg_jomlink/src/install.jomlink.php
+        'aweber.php':
+            composephp:
+                - platform/plg_jomlink/src/jomlink.php
+                - modules/aweber/aweber.php
+        'aweber.xml':
+            buildpluginxml:
+                module: modules/aweber/aweber.yml
+                platform: platform/plg_jomlink/platform.yml
+                template: platform/plg_jomlink/src/jomlink.xml
+        'manifest.xml':
+            buildpluginxml:
+                module: modules/aweber/aweber.yml
+                platform: platform/plg_jomlink/platform.yml
+                template: platform/plg_jomlink/src/manifest.xml

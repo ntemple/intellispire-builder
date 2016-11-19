@@ -1,0 +1,8 @@
+module:
+  name: constantcontact
+  plugin:
+    params:
+      - {name: 'list',     type: text,     default: '1', label: 'Order #',  description: 'Which list to add the contact to?' }
+      - {name: 'apikey',   type: text,     default: '',  label: 'API Key',  description: 'API Access Key of ConstantContact service. You can obtain this key using this link: http://community.constantcontact.com/t5/Documentation/API-Keys/ba-p/25015' }
+      - {name: 'username', type: text,     default: '',  label: 'Username', description: 'ConstantContact Account Username' }
+      - {name: 'password', type: password, default: '',  label: 'Password', description: 'ConstantContact Account Password' }

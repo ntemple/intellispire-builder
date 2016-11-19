@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install version="1.5" type="plugin" group="system" method="upgrade">
+    <name>MobileSite Redirector</name>
+    <author>Intellispire, LLC</author>
+    <creationDate>2012-06-12</creationDate>
+    <copyright>Copyright (C)2012 Intellispire.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>nick@intellispire.com</authorEmail>
+    <authorUrl>http://www.intellispire.com</authorUrl>
+    <version>1.0.1</version>
+    <description>Redirect mobile browsers from the site home page to the mobile site.</description>
+    <files>
+        <filename plugin="mobilesite">mobilesite.php</filename>
+    </files>  
+<params>
+<param  name="location" type="text" label="URL" description="Enter the location to redirect to, leave blank and system will guess url of the com_mobilesite component." />
+</params>
+<config>
+<fieldset name="Settings" label=" Settings ">
+<field  name="location" type="text" label="URL" description="Enter the location to redirect to, leave blank and system will guess url of the com_mobilesite component." />
+</fieldset>
+</config>
+</install>

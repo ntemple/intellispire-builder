@@ -1,0 +1,15 @@
+product:
+    headers:
+        name: AWeber # name, comment here to force newline in template
+        version: 1.1.0 # version, comment here to force newline in template
+    files:
+        'aweber.php':
+            params2json:
+                params: modules/aweber/aweber.yml
+            composephp:
+                - platform/bracketpress_plugin/src/plugin.php
+                - platform/bracketpress_plugin/src/settings.php
+                - platform/bracketpress_plugin/src/platform.php
+                - platform/bracketpress_plugin/src/updater.php
+                - modules/aweber/aweber.php
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<extension type="plugin" group="user" version="2.5" method="upgrade" >
+    <name>{name} Notification</name>
+    <author>Intellispire</author>
+    <creationDate>{date}</creationDate>
+    <copyright>Copyright (C)2005 - 2013 Intellispire.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>nick@intellispire.com</authorEmail>
+    <authorUrl>http://www.intellispire.com</authorUrl>
+    <version>{version}</version>
+    <description>Automatically register new users with {name}.</description>
+    <files>
+        <filename plugin="{lcname}">{lcname}.php</filename>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                {FieldUIplugin}
+            </fieldset>
+        </fields>
+    </config>
+</extension>

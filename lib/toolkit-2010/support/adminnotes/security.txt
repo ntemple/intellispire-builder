@@ -1,0 +1,2 @@
+/etc/ssh/sshd_config Add, 
+uncomment, or change the Protocol to 2.

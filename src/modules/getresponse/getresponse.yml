@@ -1,0 +1,6 @@
+module:
+  name: getresponse
+  plugin:
+    params:
+      - {name: 'campaign', type: text,     default: '',  label: 'Campaign Name',  description: 'Enter the campaign name of your autoresponder (not the id). Seperate multiple campaigns with a comma.' }
+      - {name: 'api_id',    type: text,     default: '',  label: 'API Key',   description: 'Your API Key' }

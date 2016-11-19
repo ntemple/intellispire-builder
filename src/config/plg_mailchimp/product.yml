@@ -1,0 +1,14 @@
+product:
+    headers:
+        name: MailChimp # name, comment here to force newline in template
+        version: 6.0.0 # version, comment here to force newline in template
+    files:
+        'mailchimp.php':
+            composephp:
+                - platform/plg_jomlink/src/jomlink.php
+                - modules/mailchimp/mailchimp.php
+        'mailchimp.xml':
+            buildpluginxml:
+                module: modules/mailchimp/mailchimp.yml
+                platform: platform/plg_jomlink/platform.yml
+                template: platform/plg_jomlink/src/jomlink.xml

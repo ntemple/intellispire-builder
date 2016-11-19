@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+<params>
+<param  name="menu" type="menu" label="Menu" description="Please choose the Mobile Menu for the site" />
+<param  name="logoimage" type="imagelist" label="Select a Logo Image" description="(Optional) An image to use for your logo, from the images directory." exclude="" directory="images" default="" />
+<param  name="logoheight" type="text" label="Logo Height" description="(Optional) Height of logo in pixels. Leave blank if you don't know and don't need the browser to resize." default="" />
+<param  name="logowidth" type="text" label="Logo width" description="(Optional) Width of logo in pixels. Leave blank if you don't know and don't need the browser to resize." default="" />
+<param  name="bizname" type="text" label="Business Name" description="Enter the name of your business" default="" />
+<param  name="tagline" type="text" label="Tagline" description="Enter a tagline" default="" />
+<param  name="bizphone" type="text" label="Business Phone" description="Enter your phone number." default="" />
+<param  name="clicktocall" type="radio" label="Click To Call" default="off">
+<option value="off"> Disable</option>
+<option value="text">Text</option>
+<option value="image">Image</option>
+
+</param>
+<param  name="address1" type="text" label="Address 1" description="Enter your address." default="" />
+<param  name="address2" type="text" label="Address 2" description="Enter your address." default="" />
+<param  name="analyticsid" type="text" label="Google Analytics ID" description="Enter your Google Analytics ID (UA-xxxxxx-x)" default="" />
+<param  name="stylenumber" type="list" default="0" label="Style">
+<option value="0">Style 0</option>
+<option value="1">Style 1</option>
+<option value="2">Style 2</option>
+<option value="3">Style 3</option>
+<option value="4">Style 4</option>
+<option value="5">Style 5</option>
+<option value="6">Style 6</option>
+
+</param>
+<param  name="icons" type="radio" label="Use Icons" default="off">
+<option value="on"> Yes</option>
+<option value="off"> No</option>
+
+</param>
+<param  name="facebook" type="text" label="Facebook Name" description="Enter your facebook id. Will route to http://m.facebook.com/userid" default="" />
+<param  name="twitter" type="text" label="Twitter Name" description="Enter your twitter id." default="" />
+<param  name="linkedin" type="text" label="Linked in url" description="Enter your linkedin id. Routes to http://www.linked.in.com/in/userid" default="" />
+
+</params>
+<fieldset name="Settings" label=" Settings ">
+<field  name="menu" type="menu" label="Menu" description="Please choose the Mobile Menu for the site" />
+<field  name="logoimage" type="imagelist" label="Select a Logo Image" description="(Optional) An image to use for your logo, from the images directory." exclude="" directory="images" default="" />
+<field  name="logoheight" type="text" label="Logo Height" description="(Optional) Height of logo in pixels. Leave blank if you don't know and don't need the browser to resize." default="" />
+<field  name="logowidth" type="text" label="Logo width" description="(Optional) Width of logo in pixels. Leave blank if you don't know and don't need the browser to resize." default="" />
+<field  name="bizname" type="text" label="Business Name" description="Enter the name of your business" default="Mobile Business - will be displayed if no logo is used." />
+<field  name="tagline" type="text" label="Tagline" description="Enter a tagline" default="" />
+<field  name="bizphone" type="text" label="Business Phone" description="Enter your phone number." default="" />
+<field  name="clicktocall" type="radio" label="Click To Call" default="off">
+<option value="off"> Disable</option>
+<option value="text">Text</option>
+<option value="image">Image</option>
+
+</field>
+<field  name="address1" type="text" label="Address 1" description="Enter your address." default="" />
+<field  name="address2" type="text" label="Address 2" description="Enter your address." default="" />
+<field  name="analyticsid" type="text" label="Google Analytics ID" description="Enter your Google Analytics ID (UA-xxxxxx-x)" default="" />
+<field  name="stylenumber" type="list" default="0" label="Style">
+<option value="0">Style 0</option>
+<option value="1">Style 1</option>
+<option value="2">Style 2</option>
+<option value="3">Style 3</option>
+<option value="4">Style 4</option>
+<option value="5">Style 5</option>
+<option value="6">Style 6</option>
+
+</field>
+<field  name="icons" type="radio" label="Use Icons" default="off">
+<option value="on"> Yes</option>
+<option value="off"> No</option>
+
+</field>
+<field  name="facebook" type="text" label="Facebook Name" description="Enter your facebook id. Will route to http://m.facebook.com/userid" default="" />
+<field  name="twitter" type="text" label="Twitter Name" description="Enter your twitter id." default="" />
+<field  name="linkedin" type="text" label="Linked in url" description="Enter your linkedin id. Routes to http://www.linked.in.com/in/userid" default="" />
+
+</fieldset>
+</config>
+

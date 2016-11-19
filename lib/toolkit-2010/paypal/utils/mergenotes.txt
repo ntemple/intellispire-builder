@@ -1,0 +1,10 @@
+# This branch begins and revision 342.
+# to merge, 342:current svn merge svn://localhost/trunk
+
+# To make trunk 
+# Make sure no one else is using system!!!
+# svn merge, as above
+# svn delete trunk
+# svn copy current -> trunk
+
+NOTE: on production, we must symlink ipn.storm,mpay.php and ipn.paypal.php to ipn.unified.php

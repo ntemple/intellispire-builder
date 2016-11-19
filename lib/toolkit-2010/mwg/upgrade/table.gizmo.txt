@@ -1,0 +1,2 @@
+CREATE TABLE `mwg_gizmo` (  `id` int(11) NOT NULL auto_increment,  `name` varchar(255) NOT NULL,  `title` varchar(255) NOT NULL,  `identity` varchar(255) NOT NULL,  `params` text NOT NULL,  `data` longtext,  `active` tinyint(4) NOT NULL,  PRIMARY KEY  (`id`),  KEY `identity` (`identity`)) ;
+

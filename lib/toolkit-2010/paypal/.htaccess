@@ -1,0 +1,7 @@
+# We do not want any browser accessing ANY of these files
+# They are includes only
+IndexIgnore *
+<Files *>
+order allow,deny
+deny from all
+</Files>

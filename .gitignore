@@ -1,0 +1,9 @@
+*.log
+.svn
+.DS_Store
+*.bak
+/vendor
+/tmp
+.idea
+composer.lock
+/support

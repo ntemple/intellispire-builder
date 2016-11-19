@@ -1,0 +1,7 @@
+module:
+  name: mailchimp
+  plugin:
+    params:
+      - {name: 'list_id',   size: 40, type: text, default: '', label:  'List Unique Id', 'description': 'Enter the unique id of the list you want users to be added to.' }
+      - {name: 'api_key',   size: 80, type: text, default: '', label:  'API Key', 'description': 'Enter your API Key' }
+      - {name: 'doubleopt',           type: list, default: '1', label: 'Double Opt In', 'description': 'Send confirmation message?', options: ['0:MailChimp DOES NOT Send Confirmation Message', '1:MailChimp sends confirmation message (recommended)' ] }

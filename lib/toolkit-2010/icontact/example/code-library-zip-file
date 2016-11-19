@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+  <head>
+    <title>Code Library Zip File - iContact Developer Portal</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/misc/favicon.ico" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" media="all" href="/modules/node/node.css?J" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/defaults.css?J" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system.css?J" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system-menus.css?J" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/user/user.css?J" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/theme/content-module.css?J" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/forum/forum.css?J" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/modules/fieldgroup/fieldgroup.css?J" />
+<link type="text/css" rel="stylesheet" media="all" href="/themes/developer_portal/style.css?J" />
+    <script type="text/javascript" src="/misc/jquery.js?J"></script>
+<script type="text/javascript" src="/misc/drupal.js?J"></script>
+<script type="text/javascript" src="/misc/tableheader.js?J"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/" });
+//--><!]]>
+</script>
+  </head>
+  <body>
+
+<!-- Layout -->
+  <div id="header-region" class="clear-block"><div id="block-menu-primary-links" class="block block-menu">
+
+  <div class="content">
+    <ul class="menu"><li class="leaf first"><a href="/" title="">Home</a></li>
+<li class="leaf active-trail"><a href="/documentation/icontact-application-programming-interface-api" title="">Documentation</a></li>
+<li class="leaf"><a href="/forums" title="">Forums</a></li>
+<li class="leaf last"><a href="/plugins-downloads" title="">Plugins &amp; Downloads</a></li>
+</ul>  </div>
+</div>
+</div>
+
+    <div id="wrapper">
+    <div id="container" class="clear-block">
+
+      <div id="header">
+        <h1>Documentation</h1>        <div id="logo-floater">
+        <a href="/" title=""><img src="/themes/developer_portal/logo.png" alt="" id="logo" /></a>        </div>
+
+      </div> <!-- /header -->
+
+      
+      <div id="center"><div id="squeeze">
+          <div class="breadcrumb"><a href="/">Home</a> › <a href="/documentation/icontact-application-programming-interface-api">Documentation</a></div>                              <h1>Code Library Zip File</h1>                                                  <div class="clear-block">
+            
+<div id="node-41" class="node">
+
+
+
+  
+  <div class="content clear-block">
+    Click the link below to begin the download. The download is a single .zip file, approximately 16kb in size. <strong>Note:</strong> Examples typically use generic data. You may need to add values from your account to develop working examples.<table id="attachments" class="sticky-enabled">
+ <thead><tr><th>Attachment</th><th>Size</th> </tr></thead>
+<tbody>
+ <tr class="odd"><td><a href="http://developer.icontact.com/sites/default/files/api-examples.zip">api-examples-zip</a></td><td>16.81 KB</td> </tr>
+</tbody>
+</table>
+  </div>
+
+  <div class="clear-block">
+    <div class="meta">
+      </div>
+
+</div>          </div>
+          <div id="footer"></div>
+     </div></div> <!-- /#squeeze, /#center -->
+
+      
+    </div> <!-- /container -->
+  </div>
+<!-- /layout -->
+
+    </body>
+</html>

@@ -1,0 +1,12 @@
+delete from settings where id = 134 limit 1;
+ALTER TABLE `settings` CHANGE `cat` `cat` ENUM( 'General Site Settings', 'Sign Up', 'Payment', 'OTO (One Time Offer)', 'Security', 'MWG Affiliate', '3rd Party Autoresponder', 'Stats', 'Downline Settings', 'JV Partner' ) NOT NULL DEFAULT 'General Site Settings';
+UPDATE `settings` SET `cat` = 'OTO (One Time Offer)' WHERE `settings`.`id` in(15,16,114,120) ;
+UPDATE `settings` SET `cat` = 'General Site Settings', box_type='hidden' WHERE id=8 ;
+UPDATE `settings` SET `cat` = 'General Site Settings', box_type='hidden' WHERE id=9 ;
+ALTER TABLE `products` CHANGE `price` `price` DECIMAL( 8, 2 ) NOT NULL DEFAULT '0.00', CHANGE `trial_amount` `trial_amount` DECIMAL( 6, 2 ) NOT NULL DEFAULT '0.00', CHANGE `trial_auth_amount` `trial_auth_amount` DECIMAL( 8, 2 ) NOT NULL;
+ALTER TABLE a_tr MODIFY amount decimal(10,4) NOT NULL DEFAULT '0.0000';
+ALTER TABLE levels MODIFY value decimal(8,2) NOT NULL DEFAULT '0.00';
+ALTER TABLE levels MODIFY jv1 decimal(8,2) NOT NULL DEFAULT '0.00';
+ALTER TABLE levels MODIFY jv2 decimal(8,2) NOT NULL DEFAULT '0.00';
+ALTER TABLE mwg_setting DROP INDEX name_2;
+ALTER TABLE `mwg_gizmo` ADD `display_title` INT NOT NULL AFTER `title` , ADD`display_group` VARCHAR( 255 ) NOT NULL  AFTER `display_title` , ADD `display_hidden` INT NOT NULL AFTER `display_group`;

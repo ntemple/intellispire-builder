@@ -1,0 +1,3 @@
+Action html-php /search/content.php
+AddHandler html-php .html
+

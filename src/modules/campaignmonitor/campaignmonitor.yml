@@ -1,0 +1,6 @@
+module:
+  name: campaignmonitor
+  plugin:
+    params:
+      - {name: 'list_id',   size: 60, type: text, default: '', label:  'Subscriber List ID', 'description': 'Enter the unique id of the list you want users to be added to.' }
+      - {name: 'api_key',   size: 60, type: text, default: '', label:  'API Key', 'description': 'Enter your API Key' }

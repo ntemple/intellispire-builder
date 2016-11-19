@@ -1,0 +1,22 @@
+product:
+    headers:
+        name: iContact # name, comment here to force newline in template
+        version: 5.9.0 # version, comment here to force newline in template
+    files:
+        'install.icontact.php':
+            composephp:
+                - platform/plg_jomlink/src/install.jomlink.php
+        'icontact.php':
+            composephp:
+                - platform/plg_jomlink/src/jomlink.php
+                - modules/icontact/icontact.php
+        'icontact.xml':
+            buildpluginxml:
+                module: modules/icontact/icontact.yml
+                platform: platform/plg_jomlink/platform.yml
+                template: platform/plg_jomlink/src/jomlink.xml
+        'manifest.xml':
+            buildpluginxml:
+                module: modules/icontact/icontact.yml
+                platform: platform/plg_jomlink/platform.yml
+                template: platform/plg_jomlink/src/manifest.xml

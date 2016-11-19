@@ -1,0 +1,76 @@
+Please, enter the desired ejabberd domain name. The domain is the visible attribute that is added 
+to the username to form the Jabber IM identifier (for example: user@example.net). 
+This computer must be known on the network with this address name.
+
+domu-12-31-33-00-04-40.usma1.compute.amazonaws.com
+
+
+EDITED: ejabberdctl
+NODE=ejabberd
+HOST=domu-12-31-33-00-04-40
+VERSION=1.1.2
+
+Node 'ejabberd@domu-12-31-33-00-04-40' is started. Status: started
+ejabberd is running
+
+
+./ejabberdctl register admin  domu-12-31-33-00-04-40.usma1.compute.amazonaws.com admin
+
+http://domu-12-31-33-00-04-40.usma1.compute.amazonaws.com:5280/admin/
+admin@domu-12-31-33-00-04-40.usma1.compute.amazonaws.com
+admin
+
+
+http://ejabberd.jabber.ru/yawspack
+
+Make sure ~/.yaws exists!
+
+#==========================================================
+
+References
+
+   Contributed tutorials and documents of interest are:
+   - Migration from other XMPP servers to ejabberd:
+     http://ejabberd.jabber.ru/migrate-to-ejabberd     
+   - Transport configuration for connecting to other networks:
+     http://ejabberd.jabber.ru/tutorials-transports
+Press [Enter] to continue : 
+   - Frequently Asked Questions:
+     http://ejabberd.jabber.ru/faq
+
+Cluster:
+<badlop> it's quite simple: first interconnect the two erlang nodes that run two ejabberds; then configure the mnesia part; and it's done
+
+
+Explanation
+
+Several things together cause that error:
+
+    * Mnesia stores the Erlang node name in the ejabberd database.
+    * If the node name stored in the database is not equal to the current Erlang node name, Mnesia refuses to start.
+    * If you do not specify the complete node name, Erlang will set it using the current host name.
+
+Solution
+
+Use this command line option when starting ejabberd:
+
+erl -sname foobar@localhost ...
+
+In this way the Erlang node will always have the same node name.
+
+
+Magic files are used on unix systems with a tool called "file" to identify files. Here's an addition to /etc/magic which allows "file" to identify BEAM and JAM files.
+
+# OTP R3-R4
+0	string		\0177BEAM!	Old Erlang BEAM file
+>6	short		>0		- version %d
+
+# OTP R5 and onwards
+0	string		FOR1		
+>8	string		BEAM		Erlang BEAM file
+
+# 4.2 version may have a copyright notice!!
+4	string		Tue Jan 22 14:32:44 MET 1991	Erlang JAM file - version 4.2
+79	string		Tue Jan 22 14:32:44 MET 1991	Erlang JAM file - version 4.2
+
+4	string		1.0 Fri Feb 3 09:55:56 MET 1995	Erlang JAM file - version 4.3

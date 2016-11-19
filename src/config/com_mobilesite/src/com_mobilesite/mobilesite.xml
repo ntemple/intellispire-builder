@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5" method="upgrade">
+    <name>MobileSite</name>
+    <creationDate>2013-01-18</creationDate>
+    <author>Intellispire</author>
+    <authorEmail>nick@intellispire.com</authorEmail>
+    <authorUrl>http://www.intellispire.com/</authorUrl>
+    <copyright>Copyright (c)2008-2013 Intellispire</copyright>
+    <license>GPLv2.0</license>
+    <version>1.3.0</version>
+    <description>MobileSite: Create a mobile website inside of Joomla!</description>
+    <administration>
+        <menu>COM_MOBILESITE</menu>
+        <files folder="administrator/components/com_mobilesite">
+          <file>index.html</file>
+          <file>mobilesite.php</file>
+          <file>config.xml</file>
+          <folder>models</folder>
+        </files>
+        <languages folder="administrator">
+          <language tag="en-GB">language/en-GB/en-GB.com_mobilesite.ini</language>
+          <language tag="en-GB">language/en-GB/en-GB.com_mobilesite.sys.ini</language>
+          <language tag="en-GB">language/en-GB/en-GB.com_mobilesite.menu.ini</language>
+        </languages>
+    </administration>
+    <files folder="components/com_mobilesite">
+        <file>index.html</file>
+        <file>mobilesite.php</file>
+        <folder>views/</folder>
+        <folder>assets/</folder>
+        <folder>lib/</folder>
+    </files>
+    <installfile>install.j15.php</installfile>
+    <subinstall>
+        <folder>plugins/mobilesite</folder>
+    </subinstall>
+</install>

@@ -1,0 +1,22 @@
+product:
+    headers:
+        name: CampaignMonitor # name, comment here to force newline in template
+        version: 5.9.0 # version, comment here to force newline in template
+    files:
+        'install.campaignmonitor.php':
+            composephp:
+                - platform/plg_jomlink/src/install.jomlink.php
+        'campaignmonitor.php':
+            composephp:
+                - platform/plg_jomlink/src/jomlink.php
+                - modules/campaignmonitor/campaignmonitor.php
+        'campaignmonitor.xml':
+            buildpluginxml:
+                module: modules/campaignmonitor/campaignmonitor.yml
+                platform: platform/plg_jomlink/platform.yml
+                template: platform/plg_jomlink/src/jomlink.xml
+        'manifest.xml':
+            buildpluginxml:
+                module: modules/campaignmonitor/campaignmonitor.yml
+                platform: platform/plg_jomlink/platform.yml
+                template: platform/plg_jomlink/src/manifest.xml

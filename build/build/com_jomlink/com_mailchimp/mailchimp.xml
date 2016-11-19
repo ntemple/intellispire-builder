@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" group="user" version="2.5" method="upgrade" >
+  <name>{fname}</name>
+  <creationDate>{date}</creationDate>
+  <author>Intellispire</author>
+  <authorEmail>nick@intellispire.com</authorEmail>
+  <authorUrl>http://www.intellispire.com/</authorUrl>
+  <copyright>Copyright (c)2008-2012 Intellispire</copyright>
+  <license>GPLv2.0</license>
+  <version>{version}.{sversion}</version>
+  <description>{fname} Jomlink: Module and Plugin to connect your site with the {fname} service.</description>
+  <administration>
+    <menu>COM_{ucname}</menu>
+    <files folder="administrator/components/com_{name}">
+      <file>index.html</file>
+      <file>admin.{name}.php</file>
+      <file>{name}.class.php</file>
+    </files> 
+    <languages folder="administrator">
+      <language tag="en-GB">language/en-GB/en-GB.com_{name}.ini</language>
+      <language tag="en-GB">language/en-GB/en-GB.com_{name}.sys.ini</language>
+      <language tag="en-GB">language/en-GB/en-GB.com_{name}.menu.ini</language>
+    </languages>
+  </administration> 
+  <files folder="components/com_{name}">
+    <file>index.html</file>
+    <file>{name}.php</file>
+  </files>
+  <installfile>install.php</installfile>
+  <subinstall>
+    <folder>modules/mod_{name}</folder>
+    <folder>plugins/plg_{name}</folder>
+  </subinstall>
+</extension>
+Array
+(
+    [phing.file] => /Users/ntemple/dev/product/build.xml
+    [phing.dir] => /Users/ntemple/dev/product
+    [host.os] => Darwin
+    [os.name] => Darwin
+    [php.classpath] => /Users/ntemple/dev/product/vendor/phing/phing/bin/../classes:/Users/ntemple/dev/product/vendor/phpunit/php-text-template/:/Users/ntemple/dev/product/vendor/phpunit/phpunit-mock-objects/:/Users/ntemple/dev/product/vendor/phpunit/php-timer/:/Users/ntemple/dev/product/vendor/phpunit/php-token-stream/:/Users/ntemple/dev/product/vendor/phpunit/php-file-iterator/:/Users/ntemple/dev/product/vendor/phpunit/php-code-coverage/:/Users/ntemple/dev/product/vendor/phpunit/phpunit/:/Users/ntemple/dev/product/vendor/phpunit/phpunit/../../symfony/yaml:/Users/ntemple/dev/product/vendor/phing/phing/classes:.:/php/includes:/Users/ntemple/dev/php/pear/share/pear
+    [host.fstype] => UNIX
+    [php.interpreter] => 
+    [line.separator] => 
+
+    [php.version] => 5.3.15
+    [user.home] => /Users/ntemple
+    [application.startdir] => /Users/ntemple/dev/product
+    [phing.startTime] => Sat, 16 Mar 2013 06:25:16 GMT
+    [host.name] => phantom.local
+    [host.arch] => x86_64
+    [host.domain] => unknown
+    [host.os.release] => 11.4.2
+    [host.os.version] => Darwin Kernel Version 11.4.2: Thu Aug 23 16:25:48 PDT 2012; root:xnu-1699.32.7~1/RELEASE_X86_64
+    [phing.home] => /Users/ntemple/dev/product/vendor/phing/phing
+    [env.TERM_PROGRAM] => Apple_Terminal
+    [env.TERM] => xterm-256color
+    [env.SHELL] => /bin/bash
+    [env.TMPDIR] => /var/folders/5q/zpnhffhs0wx9qg17f7ydv08w0000gn/T/
+    [env.Apple_PubSub_Socket_Render] => /tmp/launch-f12sLt/Render
+    [env.TERM_PROGRAM_VERSION] => 303.2
+    [env.OLDPWD] => /Users/ntemple/dev/projects/platform/com_jomlink/src
+    [env.TERM_SESSION_ID] => 69B096FF-1A53-4C49-920E-9E9C3801599F
+    [env.USER] => ntemple
+    [env.COMMAND_MODE] => unix2003
+    [env.SSH_AUTH_SOCK] => /tmp/launch-xzEVwO/Listeners
+    [env.__CF_USER_TEXT_ENCODING] => 0x1F5:0:0
+    [env.Apple_Ubiquity_Message] => /tmp/launch-vC0mUa/Apple_Ubiquity_Message
+    [env.PHP_CLASSPATH] => :/Users/ntemple/dev/product/lib
+    [env.PATH] => /Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin:/usr/local/share/npm/bin:/Users/ntemple/dev/php/pear/bin:/Users/ntemple/dev/product/bin:/Users/ntemple/dev/product/bin
+    [env.PWD] => /Users/ntemple/dev/product
+    [env.LANG] => en_US.UTF-8
+    [env.NODE_PATH] => /usr/local/lib/node
+    [env.SHLVL] => 1
+    [env.HOME] => /Users/ntemple
+    [env.LOGNAME] => ntemple
+    [env.DISPLAY] => /tmp/launch-Cj5iy5/org.x:0
+    [env._] => /Users/ntemple/dev/product/bin/phing
+    [env.PHP_SELF] => /Users/ntemple/dev/product/bin/phing
+    [env.SCRIPT_NAME] => /Users/ntemple/dev/product/bin/phing
+    [env.SCRIPT_FILENAME] => /Users/ntemple/dev/product/bin/phing
+    [env.PATH_TRANSLATED] => /Users/ntemple/dev/product/bin/phing
+    [env.DOCUMENT_ROOT] => 
+    [env.REQUEST_TIME] => 1363415116
+    [env.argc] => 2
+    [phing.version] => Phing DEV
+    [phing.file.products] => /Users/ntemple/dev/product/build.xml
+    [phing.dir.products] => /Users/ntemple/dev/product
+    [phing.project.name] => Products
+    [project.basedir] => /Users/ntemple/dev/product
+    [deploy.products] => 
+    [build.wpplugins] => 
+    [build.products] => plg_dentalsite
+    [all.products] => com_arhelper,mod_contentmenu,mod_isgetresponse,plg_arp3,plg_getresponse,plg_istools,com_genstaller,mod_isarp3,mod_isicontact,plg_cloudfront,plg_isaweber,plg_jems,com_updater,mod_isaweber,mod_jemsmenu,plg_curlemu,plg_isicontact,tpl_salespage
+    [all.wpplugins] => wp_constantcontact,wp_icontact
+    [s3.bucket] => network.intellispire.com
+    [product_template] => com_jomlink
+    [product_id] => JomLink
+    [product_name] => MailChimp
+    [product_version] => 6.0.0
+    [/*com_{jomlink}*/] => com_mailchimp
+)

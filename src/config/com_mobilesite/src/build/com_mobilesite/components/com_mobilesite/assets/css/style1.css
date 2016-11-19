@@ -1,0 +1,511 @@
+/* CSS Document for our Mobile Site */
+
+/**************************************************************************************** 
+Install Google Font (visit http://www.google.com/webfonts#HomePlace:home) for more fonts
+****************************************************************************************/
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+
+/************************************************************************
+Reset Layout
+*************************************************************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1.1em;
+}
+ol, ul {
+	list-style: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/************************************************************************
+Base Style
+*************************************************************************/
+.hidden { display: none; visibility: hidden; } 
+.invisible { visibility: hidden; }
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+img { border:3px solid #ccc; margin: 3px;}
+
+/************************************************************************
+Main Layout
+*************************************************************************/
+body {
+	font-family: "PT Sans",Helvetica,Arial,sans-serif; /* This controls the main font, but other areas must also change */
+	font-size: 100%; /*Changes the font size for most of the site */
+	line-height: 1.4em;
+	background-color: #F0F0F0; /* Change the color value to change the background color */
+	text-align: center;
+	color: #000; /*Changes the text color for most of the site */
+}
+
+#wrapper {
+	margin: 0 auto;
+	padding: 10px;
+}
+
+#header {
+	text-align: center;
+}
+
+#header img {
+	border: none;
+}
+
+#header p.tagline {
+	font-size: 110%;
+	text-align: center;
+	line-height: 1.5em;
+	margin-top: 0;
+}
+
+#header p.call {
+	font-size: 105%;
+	text-align: center;
+}
+
+#header p.call a {
+	color: #2A9AD4;
+}
+
+#footer{
+	height: auto;
+	color: #666; /* Changes main text color in footer area */
+	text-align: left;
+	padding-bottom: 10px;
+}
+
+#footer p.call {
+	font-size: 105%;
+	text-align: center;
+	padding: 10px 0 20px 0;
+	color: #333; /* Changes text color before Click to Call link */
+}
+
+#footer p.call a {
+	color: #2A9AD4;
+}
+
+/************************************************************************
+Basic Elements
+*************************************************************************/
+p{
+	margin: 8px 0px 12px 0px;
+	font-size: 1.025em;
+}
+a{
+	color: #2A9AD4; /*Changes the color of text links */
+}
+h1, h2, h3{
+	font-weight: bold;
+	border-bottom: 1px solid #E0E0E0; /*Changes the color of the border line under Heading text */
+}
+h1 {
+	font-size: 18px;
+	padding-bottom: 9px;
+	margin-bottom:  11px;
+	color: #000; /* Changes text color of Heading 1 text */
+}
+h2{
+	font-size: 16px;
+	padding-bottom: 5px;
+	margin-bottom:  6px;
+	padding-top: 9px;
+	color: #cc0000; /* Changes text color of Heading 2 text */
+}
+h3{
+	font-size: 14px;
+	padding-bottom: 5px;
+	margin-bottom:  5px;
+	padding-top: 5px;
+	color: #000; /* Changes text color of Heading 3 text */
+}
+
+blockquote {
+	margin: 15px 10px 0 20px;
+	padding: 10px 10px 10px 15px;
+	border-left: 5px solid #ddd;
+	border-right: 0 none;
+	background: #F0F0F0;
+} 
+
+/************************************************************************
+Homepage Navigation Styling
+*************************************************************************/
+
+.sitecontenthome {
+	-webkit-border-radius: 10px; 
+    -moz-border-radius: 10px;
+	-webkit-box-shadow: rgba(0,0,0,.3) 1px 1px 3px;
+    border: 1px solid #E0E0E0; /* Changes the border color around the menu on the homepage */
+    background-color: #3D5462; /* Changes the homepage menu background color */
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.sitecontenthome ul.menu { margin: 0px; }
+    
+.sitecontenthome ul.menu li{
+	list-style: none;
+	list-style-type: none;
+	display: block;
+	font-size: 16px;
+	border-bottom:1px solid #FFF; /* Changes the color of the separation line between each list item */
+	padding: 0px;
+	font-weight: bold;
+}
+
+.sitecontenthome .menu li:last-child{
+	border-bottom: none;
+}
+
+.sitecontenthome .menu li a{
+	background: transparent url('../images/arrow_white.gif') no-repeat right center;
+	padding: 8px 35px 8px 10px;
+	color: #FFF;
+	font-weight: bold;
+	line-height: 24px;
+	text-decoration: none;
+	display: block;
+}
+    
+.sitecontenthome .menu li a.loading{
+	background: transparent url('../images/loader_white.gif') no-repeat 99% center;
+	}
+
+/************************************************************************
+Latest News Page Styling
+*************************************************************************/
+
+.sitecontent ul.menu { margin: 0px; }
+    
+.sitecontent ul.menu li{
+	list-style: none;
+	list-style-type: none;
+	display: block;
+	font-size: 16px;
+	border-bottom:1px solid #E0E0E0; /* Changes the color of the separation line between each list item on the Latest News Page */
+	padding: 0px;
+	font-weight: bold;
+}
+
+.sitecontent .menu li:last-child{
+	border-bottom: none;
+}
+
+.sitecontent .menu li a{
+	background: transparent url('../images/arrow_dark.gif') no-repeat right center;
+	padding: 8px 35px 8px 10px;
+	color: #000; /* Changes text color of list items on Latest News page */
+	font-weight: bold;
+	line-height: 24px;
+	text-decoration: none;
+	display: block;
+}
+    
+.sitecontent .menu li a.loading{
+	background: transparent url('../images/loader_dark.gif') no-repeat 99% center;
+	}
+
+/************************************************************************
+Page Content Styling
+*************************************************************************/
+.sitecontent{
+	-webkit-border-radius: 10px; 
+    -moz-border-radius: 10px;
+	-webkit-box-shadow: rgba(0,0,0,.3) 1px 1px 3px;
+    border:1px solid #E0E0E0; /* Changes the border color around the page content */
+    background-color: #FFF;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+	.sitecontent ul {
+		list-style: disc;
+		list-style-position: inside;
+		margin: 6px 10px 15px 10px;	
+	}
+	.sitecontent img {
+		max-width: 95%;
+		max-height: 400px;	
+	}
+        .sitecontent img.inline{
+    		float: left;
+    		margin: 10px;
+    	}
+	.sitecontent table, .sitecontent td {
+		max-width: 95% !important;
+	}
+	.sitecontent pre, .sitecontent code {
+		background-color: #FCF7EC;
+		overflow-x: auto;
+		white-space: pre-wrap; /* css-3 */
+		white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+		word-wrap: break-word; /* Internet Explorer 5.5+ */
+		margin: 0px 0px 0px 0px;
+		padding:5px 5px 3px 5px;
+		white-space : normal; /* crucial for IE 6, maybe 7? */	
+	}
+	.sitecontent pre {
+		width: 95%;	
+	}
+
+img.noborder {
+	border: none;
+}
+p.centered {
+	text-align: center;
+}
+
+/************************************************************************ 
+Video container styling
+************************************************************************/
+#video { text-align: center; margin: 0 auto; padding-bottom: 10px;}
+#video a { text-align:center; margin: 0 auto;}
+#video img { text-align: center; margin: 0 auto; max-width: 95% !important;}
+
+/************************************************************************
+General Form Styling
+*************************************************************************/
+button.button{
+	font-size: 13px;
+	font-weight: bold;
+	background-color: #333;
+	width: 95%;
+	-webkit-border-radius: 5px; 
+    -moz-border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    color: #CCC;
+    border: none;
+}
+input, textarea{
+	font-family: "PT Sans",Helvetica,Arial,sans-serif;
+	-webkit-border-radius: 5px; 
+    -moz-border-radius: 5px;
+	color:#555555;
+	background:#FBFBFB none repeat scroll 0 0;
+	border:1px solid #E5E5E5;
+	font-size:12px;
+	line-height: 16px;
+	margin-bottom:16px;
+	margin-right:6px;
+	margin-top:2px;
+	padding:10px;
+	display: block;
+	width: 92%;
+}
+label {
+	font-size: 12px;
+	font-weight: bold;
+	color:#5B5A5A;
+	padding-bottom: 3px;
+	display: block;
+}
+label span, .required {
+	color: #C00;	
+}
+form p {
+	color:#5B5A5A;
+}
+
+.sitecontent .report { width: 100%; float:left; padding-top: 5px; padding-bottom: 10px;}
+.sitecontent .report ul {list-style-type: none;}
+.sitecontent .report ul li { width: 100%; float:left; padding-bottom: 10px;}
+.sitecontent .report label { width: 100%; float:left; font-family: "PT Sans", Arial, Helvetica, sans-serif; font-size:1.1em; color:#2F393D; font-weight:bold; padding-bottom:8px}
+.sitecontent .report .input { width: 94%; float:left; border:1px solid #666666; font-size:1.0em; color:#2F393D; padding:7px 3%}
+.sitecontent .report .textarea { width: 94%; height:8.75em; float:left; border:1px solid #666666; font-family: "PT Sans", Arial, Helvetica, sans-serif; font-size:1.0em; color:#2F393D; padding:10px 3%}
+.sitecontent .report .button { width: 94%; border: 2px solid #EEEEEE; background-color: #666666; font-family: "PT Sans", Arial, Helvetica, sans-serif; font-weight: bold; font-size: 1.25em; color:#FFFFFF; padding:15px 25px 15px 25px; cursor: pointer}
+
+p.privacy {
+	text-align: center;
+	font-style: italic;
+}
+
+.clear {
+	clear: both;
+}
+
+p.optin {
+	font-size: 120%;
+}
+/************************************************************************
+Buttons Styling
+*************************************************************************/
+.right a, .button{
+	-webkit-border-radius:4px;
+	-moz-border-radius: 4px;
+	padding: 4px 8px;
+	background-color: #333; /*Change this value (and the one below) to change the color of the buttons */
+	color: #FFF !important;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 24px;
+	font-size: 11px;
+	margin-left: 2px;
+}
+.left a, .button{
+	-webkit-border-radius:4px;
+	-moz-border-radius: 4px;
+	padding: 4px 8px;
+	background-color: #333; /*Change this value to change the color of the buttons */
+	color: #FFF !important;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 24px;
+	font-size: 11px;
+	margin-left: 2px;
+}
+
+/***************************************************************************
+Contact form styling
+***************************************************************************/
+
+#contact p, label, legend { font: 1.3em "PT Sans",Helvetica,Arial,sans-serif; }
+
+#contact ul {
+	list-style-type: none;
+}
+
+#contact h1 { margin: 10px 0 10px; font-size: 24px; color: #333333; }
+#contact hr { color: inherit; height: 0; margin: 6px 0 6px 0; padding: 0; border: 1px solid #d9d9d9; border-style: none none solid; }
+
+#contact { display: block; width: 95%; margin: 0 auto; padding: 0 10px 10px 10px; background-color: #FFF; -webkit-border-radius:5px; -moz-border-radius:5px;  }
+
+#contact label { display: inline-block; float: left; height: 26px; line-height: 26px; width: 155px; font-size: 1.5em; -webkit-border-radius:5px; -moz-border-radius:5px; }
+#contact input, textarea, select { width: 95%; margin: 5px 0; padding: 5px; color: #666; background: #f5f5f5; border: 1px solid #ccc;  font: 1.2em "PT Sans",Helvetica,Arial,sans-serif; -webkit-border-radius:5px; -moz-border-radius:5px; }   
+#contact input:focus, textarea:focus, select:focus { border: 1px solid #999; background-color: #fff; color:#333; }
+#contact input.submit { width: 95%; cursor: pointer; border: 1px solid #222; background:#333; color:#fff; padding: 7px; }
+#contact input.submit:hover { background:#444; }
+#contact input[type="submit"][disabled] { background:#888; }
+#contact fieldset { padding:20px; border:1px solid #eee; -webkit-border-radius:5px; -moz-border-radius:5px; }
+#contact legend { padding:7px 10px; font-weight:bold; color:#000; border:1px solid #eee; -webkit-border-radius:5px; -moz-border-radius:5px; margin-bottom:0 !important; margin-bottom:20px; }
+#contact legend a { color: #2A9AD4; }
+#contact span.required{ font-size: 13px; color: #ff0000; } /* Select the color of the * if the field is required. */
+
+#contact select { margin: 5px 0 30px 0; }  
+
+#message { margin: 10px 0; padding: 0; }
+
+.error_message { display: block; height: 22px; line-height: 22px; background: #FBE3E4 url('../images/error.gif') no-repeat 10px center; padding: 3px 10px 3px 35px; color:#8a1f11;border: 1px solid #FBC2C4; -webkit-border-radius:5px; }
+
+.loader { padding: 0 10px; }
+
+#contact #success_page h1 { background: url('../images/success.gif') left no-repeat; padding-left:22px; }
+
+/********************************************************************
+Google Map Styling
+********************************************************************/
+
+#gmap label, legend { font: 1.3em "PT Sans",Helvetica,Arial,sans-serif; }
+
+#gmap ul {
+	list-style-type: none;
+}
+
+#gmap { display: block; width: 95%; margin: 0 auto; padding: 0 10px 10px 0; background-color: #FFF; }
+
+#gmap label { margin-bottom: 4px; display: inline-block; float: left; height: auto; line-height: 26px; width: 95%; font-size: 1.3em; -webkit-border-radius:5px; -moz-border-radius:5px; }
+#gmap input, textarea, select { width: 95%; margin: 15px 0; padding: 5px; color: #666; background: #f5f5f5; border: 1px solid #ccc; font: 1.3em "PT Sans",Helvetica,Arial,sans-serif; -webkit-border-radius:5px; -moz-border-radius:5px; }   
+#gmap input:focus, textarea:focus, select:focus { border: 1px solid #999; background-color: #fff; color:#333; }
+#gmap input.submit { width: 70%; cursor: pointer; border: 1px solid #222; background:#333; color:#fff; padding: 7px; }
+#gmap input.submit:hover { background:#444; }
+#gmap input[type="submit"][disabled] { background:#888; }
+
+
+/********************************************************************
+Coupon Styling
+********************************************************************/
+
+.sitecontent .coupons {
+	background-color: #FCFFCD; /*Changes background color of coupon area */
+	border: 1px solid #999; /* Changes border line color around coupon */
+	padding: 10px;
+	width: 90%;
+	margin: 0 auto 10px auto;
+}
+
+.sitecontent .coupons h2 {
+	border-bottom: 1px solid #999;
+}
+
+/********************************************************************
+Special List Styling - Remove bullets, add some top/bottom padding to li
+********************************************************************/
+
+.special ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.special li {
+	padding: 5px 0;
+}
+
+/************************************************************************
+Misc Styling
+*************************************************************************/
+.right{ float: right; }
+.zeropad { padding: 0px; }
+.notice {
+	-x-system-font:none;
+	background: #FFF3AE none repeat scroll 0 0;
+	font-family: Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	padding:10px;
+	margin: 8px 0px 14px 0px;
+	font-style: italic;
+	width: 260px;
+	-webkit-border-radius:4px;
+}
+.error{ border: 1px solid #CC0000; }
+.spacer{ clear: both; }
+.rss-news-plugin { padding: 10px; }
+
+/********************************************************************
+Styling for the Click to Call button or Text at the top of each page
+*********************************************************************/
+
+#clicktocall {
+	text-align: center;
+	margin: 0 auto;
+}
+#clicktocall img {
+	border: none;
+}

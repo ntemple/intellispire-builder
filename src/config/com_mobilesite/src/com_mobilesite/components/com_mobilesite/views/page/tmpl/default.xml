@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+<layout title="Mobile Menu"><message>Mobile Menu</message></layout>
+<state>
+<name>Mobile Menu</name>
+<description>Mobile Menu</description>
+                <url addpath="/administrator/components/com_content/elements">
+                        <param name="id" type="article" default="0" label="Select Article" description="Select Article for Page Content" />
+                </url>
+<params>
+  <param  name="icon" label="Icon" type="list" required="false" description="Which icon would you like to use?">
+		<option value="none">None</option>
+		<option value="about">Info</option>
+		<option value="gift">Gift</option>
+		<option value="hours">Business Hours</option>
+		<option value="services">Services</option>
+		<option value="rss">News</option>
+		<option value="reviews">Reviews</option>
+		<option value="events">Events</option>
+		<option value="faqs">FAQ</option>
+		<option value="directions">Directions</option>
+		<option value="coupons">Coupon</option>
+		<option value="images">Images</option>
+		<option value="videos">Videos</option>
+		<option value="menu">Menu</option>
+		<option value="home">Home</option>
+		<option value="phone">Phone</option>
+		<option value="facebook">Facebook</option>
+		<option value="twitter">Twitter</option>
+		<option value="linkedin">LinkedIn</option>
+  </param>
+  <param  name="headertext" label="Top Text" type="textarea" required="false" description="Optional text at the start of the page" />
+  <param  name="footertext" label="End Text" type="textarea" required="false" description="Optional html at the end of the page" />
+  <param  name="mobilepage_title" label="Page Title" type="text" required="false" description="Title for browser bar and SEO." />
+  <param  name="mobilepage_description" label="Meta Description" type="textarea" required="false" description="Page Description summary, displayed by search engines." />
+
+</params>
+</state>
+        <fields name="request">
+                <fieldset name="request"
+                        addfieldpath="/administrator/components/com_mobilesite/models/fields" label=" Optional Article ">
+
+                        <field name="id" type="modal_article"
+                                label="Select Article"
+                                required="false"
+                                description="Select Article for Page Content"
+                        />
+                </fieldset>
+        </fields>
+<fields name="params">
+  <fieldset name="Mobile Page Settings" label=" Mobile Page Settings ">
+      <field  name="icon" label="Icon" type="list" required="false" description="Which icon would you like to use?">
+		<option value="none">None</option>
+		<option value="about">Information</option>
+		<option value="gift">Gift</option>
+		<option value="hours">Business Hours</option>
+		<option value="services">Services</option>
+		<option value="rss">News</option>
+		<option value="reviews">Reviews</option>
+		<option value="events">Events</option>
+		<option value="faqs">FAQ</option>
+		<option value="directions">Directions</option>
+		<option value="coupons">Coupon</option>
+		<option value="images">Images</option>
+		<option value="videos">Videos</option>
+		<option value="menu">Menu</option>
+		<option value="home">Home</option>
+		<option value="phone">Phone</option>
+		<option value="facebook">Facebook</option>
+		<option value="twitter">Twitter</option>
+		<option value="linkedin">LinkedIn</option>
+	</field>  
+    <field  name="headertext" label="Top Text" type="textarea" required="false" description="Optional text at the start of the page" />
+    <field  name="footertext" label="End Text" type="textarea" required="false" description="Optional html at the end of the page" />
+    <field  name="mobilepage_title" label="Page Title" type="text" required="false" description="Page Title for SEO, displayed in browser bar and by search engines" />
+    <field  name="mobilepage_description" label="Meta Description" type="textarea" required="false" description="Page Description summary, displayed by search engines." />
+    
+  </fieldset>
+</fields>
+</metadata>

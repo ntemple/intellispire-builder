@@ -1,0 +1,15 @@
+product:
+    headers:
+        name: GetResponse # name, comment here to force newline in template
+        version: 1.0.0 # version, comment here to force newline in template
+    files:
+        'getresponse.php':
+            params2json:
+                params: modules/getresponse/getresponse.yml
+            composephp:
+                - platform/newsletter_plugin/src/plugin.php
+                - platform/newsletter_plugin/src/settings.php
+                - platform/newsletter_plugin/src/platform.php
+                - platform/newsletter_plugin/src/updater.php
+                - modules/getresponse/getresponse.php
+

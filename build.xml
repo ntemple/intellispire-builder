@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<project name="Products" default="test" basedir=".">
+    <includepath classpath="lib/" />
+    <!--
+    http://www.phing.info/docs/guide/trunk/chapters/ExtendingPhing.html
+    -->
+
+    <property file="src/build.properties" />
+    <taskdef name="getdate" classname="phing.tasks.date" />
+
+    <target name="clean">
+        <echo msg="Making directory ./build" />
+        <delete dir="./build" verbose="false" failonerror="false" />
+        <mkdir dir="./build/build" />
+        <mkdir dir="./build/dist" />
+        <mkdir dir="./build/test" />
+    </target>
+
+    <target name="test">
+        <getdate propertyname="date" />
+        <echo msg="Today is: ${date}"  />
+    </target>
+
+    <target name="build_jomlink">
+        <property name="product_template" value="com_jomlink" />
+        <property name="product_id"       value="JomLink" />
+        <property name="product_name"     value="MailChimp" />
+        <property name="product_version"  value="6.0.0" />
+        <property name="/*com_{jomlink}*/" value="com_mailchimp" />
+
+        <copy todir="./build/build/${product_template}"  overwrite="true">
+            <mapper classname="phing.mappers.variablemapper" from="${product_id}" to="${product_name}"/>
+            <fileset dir="./src/products/${product_template}" />
+            <filterchain>
+                <expandproperties />
+                <filterreader classname="phing.filters.TwigFilter" />
+            </filterchain>
+        </copy>
+    </target>
+
+</project>
+

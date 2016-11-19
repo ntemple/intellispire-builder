@@ -1,0 +1,15 @@
+A: There are a couple of possibilities. The date on your server could be improperly synced, your main IP could have changed, or your files could have been corrupted.
+
+   1.
+
+      First, try to resync your server's date:
+
+      #rdate -s rdate.darkorb.net
+   2.
+
+      If that does not work, try to update your CPanel license file:
+
+      #/usr/local/cpanel/cpkeyclt
+   3.
+
+      If these do not work contact your distributor so they can update your license

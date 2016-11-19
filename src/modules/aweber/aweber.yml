@@ -1,0 +1,6 @@
+module:
+  name: AWeber
+  plugin:
+    params:
+      - {name: 'autoresponder',   size: 50, type: text, default: '', label:  'Autoresponder Email Address', 'description': 'Enter the email address used for subscriptions to your autoresponder. You may enter multiple addresses seperated by commas.' }
+      - {name: 'sitename',        size: 50, type: text, default: '', label:  'Site Name', 'description': "(Optional) Your site name will be appended to the subject. Use this to distinguish between multiple websites." }

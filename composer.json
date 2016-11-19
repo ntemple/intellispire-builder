@@ -1,0 +1,22 @@
+{
+    "name": "intellispire/projects",
+    "description": "Tools to build intellispire products",
+    "license": "MIT",
+    "repositories": [
+        {
+            "type": "pear",
+            "url": "http://pear.php.net"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "3.7.*",
+        "symfony/console": "2.1.*",
+        "symfony/yaml": "2.1.*",
+        "composer/composer": "1.0.*@dev",
+        "phing/phing": "*",
+        "twig/twig": "1.*"
+    },
+    "bin": [
+        "bin/composer-yaml"
+    ]
+}

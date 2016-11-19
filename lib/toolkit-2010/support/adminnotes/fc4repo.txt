@@ -1,0 +1,43 @@
+How to create a working Fedora Core 4 Yum Repository
+
+yum install createrepo
+
+mkdir -p /mnt/yum/fedora/core/4/base
+mkdir /mnt/working
+mkdir /mnt/disk
+cd    /mnt/working
+
+
+wget -b http://mirrors.xmission.com/fedora/core/4/i386/iso/FC4-i386-disc1.iso
+wget -b http://mirrors.xmission.com/fedora/core/4/i386/iso/FC4-i386-disc2.iso
+wget -b http://mirrors.xmission.com/fedora/core/4/i386/iso/FC4-i386-disc3.iso
+wget -b http://mirrors.xmission.com/fedora/core/4/i386/iso/FC4-i386-disc4.iso
+
+mount -o loop /mnt/working/FC4-i386-disc1.iso /mnt/disk/
+cp --reply=yes /mnt/disk/Fedora/RPMS/* /mnt/yum/Fedora/Core/4/base/
+umount /mnt/disk
+
+mount -o loop /mnt/working/FC4-i386-disc2.iso /mnt/disk/
+cp --reply=yes /mnt/disk/Fedora/RPMS/* /mnt/yum/fedora/core/4/base/
+umount /mnt/disk
+
+mount -o loop /mnt/working/FC4-i386-disc3.iso /mnt/disk/
+cp --reply=yes /mnt/disk/Fedora/RPMS/* /mnt/yum/fedora/core/4/base/
+umount /mnt/disk
+
+mount -o loop /mnt/working/FC4-i386-disc4.iso /mnt/disk/
+cp --reply=yes /mnt/disk/Fedora/RPMS/* /mnt/yum/fedora/core/4/base/
+umount /mnt/disk
+
+# Create the updates
+# Need a better mirror program, that's for sure!
+# This tried to download the whole friggin' repository!!!
+# And this requirs moving stuff around
+wget --mirror -p /mnt/yum/fedora/core/4/updates http://download.fedora.redhat.com/pub/fedora/linux/core/updates/4/i386
+
+# YAGNI: Don't over-generalise, because You Aint Gonna Need It.
+mv /mnt/yum /mnt/pub
+mv /working/ 
+createrepo /mnt/pub/
+
+s3sync.rb -r -p /mnt/pub/ mirrors.intellispire.com:pub

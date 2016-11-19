@@ -1,0 +1,89 @@
+Signal Received
+Signal Received
+Signal Received
+AddItConduit.dll veersion = 1/0/0/15, possible hotsync issue = No.
+Sync Manager version = 2.5
+Sync Manager version is high but conduit.dll is new, probably don't have install issue.
+Wait timeout
+Signal Received
+Signal Received
+Signal Received
+Signal Received
+Signal Received
+Signal Received
+Signal Received
+Connecting to addit1.bluefishwireless.com:80
+HTTP Operation Success
+Connecting to 69.13.216.2:80
+HTTP Operation Success
+Signal Received
+Signal Received
+Connecting to 69.13.216.2:80
+Wait timeout
+Sending NOOP
+Signal Received
+Wait timeout
+Sending NOOP
+Signal Received
+HTTP Operation Success
+Signal Received
+Signal Received
+Signal Received
+Signal Received
+Signal Received
+Signal Received
+Signal Received
+Signal Received
+Signal Received
+Signal Received
+Connecting to addit1.bluefishwireless.com:80
+HTTP Operation Success
+Connecting to 69.13.216.2:80
+HTTP Operation Success
+Signal Received
+Signal Received
+Signal Received
+Signal Received
+Signal Received
+Signal Received
+Signal Received
+Signal Received
+Signal Received
+Signal Received
+Signal Received
+Connecting to addit1.bluefishwireless.com:80
+HTTP Operation Success
+Signal Received
+Signal Received
+Signal Received
+Signal Received
+Signal Received
+Signal Received
+Connecting to addit1.bluefishwireless.com:80
+HTTP Operation Success
+Connecting to 69.13.216.2:80
+HTTP Operation Success
+Signal Received
+Signal Received
+Signal Received
+Signal Received
+Signal Received
+Signal Received
+Signal Received
+Signal Received
+Signal Received
+Signal Received
+Signal Received
+Connecting to addit1.bluefishwireless.com:80
+HTTP Operation Success
+Connecting to 69.13.216.2:80
+HTTP Operation Success
+Signal Received
+Signal Received
+Signal Received
+Signal Received
+Signal Received
+Signal Received
+Terminating Threads
+Manager Thread terminated
+Network Thread terminated

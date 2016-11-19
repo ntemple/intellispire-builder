@@ -1,0 +1,15 @@
+product:
+    headers:
+        name: CampaignMonitor # name, comment here to force newline in template
+        version: 1.1.0 # version, comment here to force newline in template
+    files:
+        'campaignmonitor.php':
+            params2json:
+                params: modules/campaignmonitor/campaignmonitor.yml
+            composephp:
+                - platform/bracketpress_plugin/src/plugin.php
+                - platform/bracketpress_plugin/src/settings.php
+                - platform/bracketpress_plugin/src/platform.php
+                - platform/bracketpress_plugin/src/updater.php
+                - modules/campaignmonitor/campaignmonitor.php
+

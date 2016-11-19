@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" group="user" version="2.5" method="upgrade" >
+  <name>{fname}</name>
+  <creationDate>{date}</creationDate>
+  <author>Intellispire</author>
+  <authorEmail>nick@intellispire.com</authorEmail>
+  <authorUrl>http://www.intellispire.com/</authorUrl>
+  <copyright>Copyright (c)2008-2012 Intellispire</copyright>
+  <license>GPLv2.0</license>
+  <version>{version}.{sversion}</version>
+  <description>{fname} Jomlink: Module and Plugin to connect your site with the {fname} service.</description>
+  <administration>
+    <menu>COM_{ucname}</menu>
+    <files folder="administrator/components/com_{name}">
+      <file>index.html</file>
+      <file>admin.{name}.php</file>
+      <file>{name}.class.php</file>
+    </files> 
+    <languages folder="administrator">
+      <language tag="en-GB">language/en-GB/en-GB.com_{name}.ini</language>
+      <language tag="en-GB">language/en-GB/en-GB.com_{name}.sys.ini</language>
+      <language tag="en-GB">language/en-GB/en-GB.com_{name}.menu.ini</language>
+    </languages>
+  </administration> 
+  <files folder="components/com_{name}">
+    <file>index.html</file>
+    <file>{name}.php</file>
+  </files>
+  <installfile>install.php</installfile>
+  <subinstall>
+    <folder>modules/mod_{name}</folder>
+    <folder>plugins/plg_{name}</folder>
+  </subinstall>
+</extension>
